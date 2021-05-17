@@ -1,7 +1,7 @@
 ---
 title: "PA1_template"
-author: "Simon Monk"
-date: "April 17, 2016"
+author: "Ali Abandi"
+date: "May 17, 2021"
 output: html_document
 ---
 
@@ -16,7 +16,7 @@ library(sqldf)
 Set working directory and read our pre-processed data set in.
 
 ```{r, message = FALSE, warning=FALSE, echo = TRUE}
-setwd('C:/Users/simon.monk/Documents/Data Science Course/Reproducible Research')
+setwd('C:/Users/abandi/Desktop/Coursera/Data Science Course/Reproducible Research')
 data <- read.csv("activity.csv")
 ```
 
