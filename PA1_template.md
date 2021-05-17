@@ -1,7 +1,7 @@
 ---
-title: "Reproducable Research Project Week 1"
-author: "Simon Monk"
-date: "April 17, 2016"
+title: "Peer-graded Assignment: Course Project 1"
+author: "Ali Abandi"
+date: "May 17, 2021"
 output: html_document
 ---
 
@@ -72,7 +72,7 @@ meanStepsPerInterval$interval <- rownames(meanStepsPerInterval)
 plot(meanStepsPerInterval$interval, meanStepsPerInterval$mean, type = 'l', ylab = "Mean Steps", xlab = "Interval")
 ```
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png) 
+![plot of chunk unnamed-chunk-6](figures/f1.png) 
 
 Get the interval with the highest average number of steps on average.
 
@@ -113,7 +113,7 @@ names(sumByDay.filledIn) <- c("Steps")
 qplot(sumByDay.filledIn$Steps, geom="histogram", ylab="Number of Days", xlab="Number of Steps", binwidth = 500)
 ```
 
-![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png) 
+![plot of chunk unnamed-chunk-10](figures/f2.png) 
 
 Calculate the mean and median total number of steps per day:
 
@@ -154,4 +154,4 @@ ggplot(averages, aes(interval, steps)) + geom_line(colour="red") + facet_grid(dt
   xlab("Interval (5 minutes)") + ylab("Average Steps")
 ```
 
-![plot of chunk unnamed-chunk-13](figure/unnamed-chunk-13-1.png) 
+![plot of chunk unnamed-chunk-13](figures/f3.png) 
