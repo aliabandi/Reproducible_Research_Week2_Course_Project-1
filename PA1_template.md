@@ -18,7 +18,7 @@ Set working directory and read our pre-processed data set in.
 
 
 ```r
-setwd('C:/Users/simon.monk/Documents/Data Science Course/Reproducible Research')
+setwd('C:/Users/abandi/Desktop/Coursera/Data Science Course/Reproducible Research')
 data <- read.csv("activity.csv")
 ```
 
@@ -40,7 +40,7 @@ names(sumByDay) <- c("Steps")
 qplot(sumByDay$Steps, geom="histogram", ylab="Number of Days", xlab="Number of Steps", binwidth = 500)
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-4](figures/f1.png) 
 
 Calculate the mean and median total number of steps per day:
 
@@ -72,7 +72,7 @@ meanStepsPerInterval$interval <- rownames(meanStepsPerInterval)
 plot(meanStepsPerInterval$interval, meanStepsPerInterval$mean, type = 'l', ylab = "Mean Steps", xlab = "Interval")
 ```
 
-![plot of chunk unnamed-chunk-6](figures/f1.png) 
+![plot of chunk unnamed-chunk-6](figures/f2.png) 
 
 Get the interval with the highest average number of steps on average.
 
@@ -113,7 +113,7 @@ names(sumByDay.filledIn) <- c("Steps")
 qplot(sumByDay.filledIn$Steps, geom="histogram", ylab="Number of Days", xlab="Number of Steps", binwidth = 500)
 ```
 
-![plot of chunk unnamed-chunk-10](figures/f2.png) 
+![plot of chunk unnamed-chunk-10](figures/f3.png) 
 
 Calculate the mean and median total number of steps per day:
 
@@ -154,4 +154,4 @@ ggplot(averages, aes(interval, steps)) + geom_line(colour="red") + facet_grid(dt
   xlab("Interval (5 minutes)") + ylab("Average Steps")
 ```
 
-![plot of chunk unnamed-chunk-13](figures/f3.png) 
+![plot of chunk unnamed-chunk-13](figures/f4.png) 
